@@ -1,0 +1,76 @@
+<html>
+    
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into%20Light&amp;display=swap" media="all" id="shr-font-shadows-into light">
+        <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/star-rating.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6b9351e8b5.js" crossorigin="anonymous"></script>
+        <script async defer crossorigin="anonymous" src="../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+       <title>॥स्वतंत्रता दिवस की हार्दिक शुभकामनाए॥</title>
+        <link href="assets/img/favicon.png" rel="icon">
+        <link rel="manifest" id="manifest-placeholder">
+        
+        <style>
+            .profile-pic .profile-pic-img {
+                width: 150px;
+                margin-top: 75px;
+                border-radius: 8px;
+                border: 2px solid #ffffff;
+            }
+
+            .name,
+            .firstmname {
+                padding: 2px 10px;
+                font-size: 14px;
+                color: #ffffff;
+                letter-spacing: 0.6px;
+                 margin-bottom: 10px;
+                margin: 0;
+                margin-bottom: 7px;
+                text-transform: uppercase;
+                text-align: left;
+
+            }
+            .firstmname {
+                font-size: 18px;
+                margin-bottom: 14px;
+                margin-top: 10px;
+            }
+            .name {
+                text-transform: capitalize;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="page-wrapper" id="home-section">
+            <div class="page-details">
+                
+            </div>
+        </div>
+        
+          <div style="align-items: center;">
+        <h1 style="margin-top: 30px;">Share on whatsapp </h1>
+
+        <?php 
+        $a = $_GET['n'];
+        $b = str_replace(' ', '-', $a);
+        $c = "http://rachanawebtech.epizy.com/?n=".$b;
+        ?>
+        
+        <a href="<?php echo $c;?>"><?php echo $c; ?></a>
+  
+        <a class="whatsapp-button" style="align-self: center;" href="whatsapp://send?text=Happy%20Independece%20Day%0AFrom%20*<?php echo $a;?>*%0AClick%20below%20link%0A%0A<?php echo $c; ?>%0A%0ACreate%20with%20Your%20Name"><i class="fab fa-whatsapp"></i>Share On whatsapp</a>
+    </div>
+        <div style="padding-top: 100%;"></div>
+        <div  class="copyright-wrapper">
+             <p>Created by <a href="http://www.rachanawebtech.in" target="_blank"><b>Rachana WebTech</b></a></p>
+        </div>
+ 
+</body>
+
+</html>
